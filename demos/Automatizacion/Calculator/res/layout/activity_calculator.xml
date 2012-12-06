@@ -1,0 +1,87 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".CalculatorActivity" >
+
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+        
+        <LinearLayout 
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight=".8"
+	        android:orientation="vertical" >
+        
+	        <EditText
+		        android:id="@+id/edtNumber1"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:inputType="number"
+		        android:hint="operador 1" >
+		
+		        <requestFocus />
+		    </EditText>
+		
+		    <EditText
+		        android:id="@+id/edtNumber2"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:inputType="number"
+		        android:hint="operador 2" />
+	    </LinearLayout>
+	    
+        <LinearLayout 
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical"
+	        android:layout_weight=".2" >
+		    <Button
+		        android:id="@+id/btnDividir"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:text="÷"
+		        android:onClick="onClick"  />
+        	<Button
+		        android:id="@+id/btnMultiplicar"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:text="x"
+		        android:onClick="onClick" />
+        	<Button
+		        android:id="@+id/btnRestar"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:text="-"
+		        android:onClick="onClick"  />
+        	<Button
+		        android:id="@+id/btnSumar"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:text="+"
+		        android:onClick="onClick"  />
+        </LinearLayout>
+	    
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        
+        <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="Resultado:" />
+	
+	    <TextView
+	        android:id="@+id/txtResult"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="5dp" />
+        
+    </LinearLayout>
+
+</LinearLayout>

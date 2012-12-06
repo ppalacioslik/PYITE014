@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="arrayWidgets">
+        <item >Campos de Texto</item>
+        <item >Botones</item>
+        <item >Grilla</item>
+        <item >Fecha y Hora</item>
+        <item >Selección de opciones</item>
+        <item >Mapas</item>
+        <item >Compatibilidad</item>
+        <item >Sin Compatibilidad</item>
+    </string-array>
+    
+    <string-array name="arrayOpciones">
+        <item >Opción 1</item>
+        <item >Opción 2</item>
+        <item >Opción 3</item>
+        <item >Opción 4</item>
+        <item >Opción 5</item>
+        <item >Opción 6</item>
+    </string-array>
+    
+</resources>
